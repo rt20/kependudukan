@@ -3,7 +3,8 @@ include('../../config/koneksi.php');
 
 if ($_SESSION['user']['status_user'] != 'Admin'){
   $iduser = $_SESSION['user']['id_user'];
-  // ambil dari database
+  // ambil dari database 
+  // edited by rootspace
   $query = "SELECT *, TIMESTAMPDIFF(YEAR, `tanggal_lahir_warga`, CURDATE()) AS usia_warga FROM warga where id_user=$iduser";
   
   $hasil = mysqli_query($db, $query);

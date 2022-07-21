@@ -5,7 +5,7 @@
 
 <?php include('data-index.php') ?>
 <?php include('../dasbor/data-index.php') ?>
-
+ 
 <table class="table table-striped table-condensed table-hover" id="datatable">
   <thead>
     <tr>

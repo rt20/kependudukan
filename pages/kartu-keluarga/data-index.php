@@ -3,6 +3,7 @@ include('../../config/koneksi.php');
 if ($_SESSION['user']['status_user'] != 'Admin'){
   $iduser = $_SESSION['user']['id_user'];
   // ambil dari database
+   // edited by rootspace
   $query = "SELECT * FROM kartu_keluarga LEFT JOIN warga ON kartu_keluarga.id_kepala_keluarga = warga.id_warga where kartu_keluarga.id_user=$iduser";
 
   $hasil = mysqli_query($db, $query);
